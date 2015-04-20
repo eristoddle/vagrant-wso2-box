@@ -9,5 +9,17 @@ It downloads:
 - ActiveMQ
 - All WSO2 Products, comment out those you don't need
 
-Api Manager is a service
-BAM is broken currently
+##Active Applications
+
+- Api Manager is a service
+- BAM is broken currently
+- DSS
+- BRS
+
+## Links
+
+- [Docs](https://docs.wso2.com/)
+- [Carbon Admin](https://localhost:9443/carbon)
+- [API Store](https://localhost:9443/store)
+- [API Publisher](https://localhost:9443/publisher)
+- [Carbon Admin](https://localhost:9443/carbon)
