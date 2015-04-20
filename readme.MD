@@ -28,4 +28,3 @@ etc...
 - [Carbon Admin](https://localhost:9443/carbon)
 - [API Store](https://localhost:9443/store)
 - [API Publisher](https://localhost:9443/publisher)
-- [Carbon Admin](https://localhost:9443/carbon)
