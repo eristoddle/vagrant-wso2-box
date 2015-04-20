@@ -9,7 +9,13 @@ It downloads:
 - ActiveMQ
 - All WSO2 Products, comment out those you don't need
 
-##Active Applications
+##Active Application Services
+
+All can be stopped, started and restarted
+
+`sudo service wso2am restart`
+`sudo service wso2brs stop`
+etc...
 
 - Api Manager is a service
 - BAM is broken currently
