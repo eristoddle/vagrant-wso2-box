@@ -1,3 +1,3 @@
 node 'default' {
-  include am, bam
+  include am, bam, brs, dss
 }
