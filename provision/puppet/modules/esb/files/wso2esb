@@ -3,8 +3,8 @@
 # description: SysVInit script for WSO2 API Manager
 
 export JAVA_HOME=/usr/java/default
-export SERVICE_HOME='/opt/wso2dss-3.2.2'
-export SERVICE_NAME='WSO2 Data Services Server'
+export SERVICE_HOME='/opt/wso2esb-4.7.0'
+export SERVICE_NAME='WSO2 ESB'
 export USER=vagrant
 
 startcmd="$SERVICE_HOME/bin/wso2server.sh start > /dev/null &"

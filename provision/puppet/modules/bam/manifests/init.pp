@@ -28,7 +28,7 @@ class bam{
   service { 'wso2bam':
     ensure => true,
     enable => true,
-  #require => [ Package['oracle-java7'], Service['wso2am'] ],
+  require => [ Service['wso2am'] ],
   }
 
   file { '/opt/wso2bam-2.4.1/repository/conf/carbon.xml':

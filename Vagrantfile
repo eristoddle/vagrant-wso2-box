@@ -26,6 +26,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.network "forwarded_port", guest: 9446, host: 9446
     config.vm.network "forwarded_port", guest: 8280, host: 8280
     config.vm.network "forwarded_port", guest: 8243, host: 8243
+    config.vm.network "forwarded_port", guest: 7614, host: 7614
 
     config.vm.network :private_network, ip: "192.168.11.11"
     config.vm.hostname = "wso2.local"

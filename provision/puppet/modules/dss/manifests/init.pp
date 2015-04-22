@@ -28,5 +28,6 @@ class dss{
   service { 'wso2dss':
     ensure => true,
     enable => true,
+    require => [ Service['wso2am'] ]
   }
 }
