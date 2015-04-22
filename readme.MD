@@ -35,9 +35,11 @@ you still want around but you do not want to autostart:
 
 Go to Configure/Features/Repository Management
 Add repos needed from
-Add this repo:
+Add this repo if not already there:
 name: Equinox P2
 url: http://product-dist.wso2.com/p2/carbon/releases/4.2.0/
+
+Then click the 'Find Features
 
 List of repos: http://product-dist.wso2.com/p2/carbon/releases
 Play whack-a-repo to find the right version: http://wso2.com/products/carbon/release-matrix/

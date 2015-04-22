@@ -1,9 +1,9 @@
 class esb{
-  file { '/tmp/wso2esb-4.7.0.zip':
-    source => '/home/vagrant/wso2esb-4.7.0.zip',
+  file { '/tmp/wso2esb-4.8.1.zip':
+    source => '/home/vagrant/wso2esb-4.8.1.zip',
   }
 
-  file { '/opt/wso2esb-4.7.0':
+  file { '/opt/wso2esb-4.8.1':
     ensure => directory,
     owner  => 'vagrant',
     group  => 'vagrant',
@@ -11,12 +11,12 @@ class esb{
   }
 
   exec { 'Extract WSO2 Data Services Server':
-    command => '/usr/bin/unzip /tmp/wso2esb-4.7.0.zip',
+    command => '/usr/bin/unzip /tmp/wso2esb-4.8.1.zip',
     cwd     => '/opt',
-    creates => '/opt/wso2esb-4.7.0/bin/wso2server.sh',
+    creates => '/opt/wso2esb-4.8.1/bin/wso2server.sh',
     user    => 'vagrant',
     group   => 'vagrant',
-    require => File['/tmp/wso2esb-4.7.0.zip', '/opt/wso2esb-4.7.0'],
+    require => File['/tmp/wso2esb-4.8.1.zip', '/opt/wso2esb-4.8.1'],
     timeout => 0,
   }->
   file { '/etc/init.d/wso2esb':
