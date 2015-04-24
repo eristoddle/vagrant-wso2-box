@@ -1,0 +1,33 @@
+#! /bin/sh
+# chkconfig: 2345 20 80
+# description: SysVInit script for WSO2 API Manager
+
+export JAVA_HOME=/usr/java/default
+export SERVICE_HOME='/opt/wso2brs-2.1.0'
+export SERVICE_NAME='WSO2 Business Rules Server'
+export USER=vagrant
+
+startcmd="$SERVICE_HOME/bin/wso2server.sh start > /dev/null &"
+restartcmd="$SERVICE_HOME/bin/wso2server.sh restart > /dev/null &"
+stopcmd="$SERVICE_HOME/bin/wso2server.sh stop > /dev/null &"
+ 
+case "$1" in
+start)
+   echo "Starting $SERVICE_NAME ..."
+   su -c "${startcmd}" $USER
+;;
+restart)
+   echo "Re-starting $SERVICE_NAME ..."
+   su -c "${restartcmd}" $USER
+;;
+stop)
+   echo "Stopping $SERVICE_NAME ..."
+   su -c "${stopcmd}" $USER
+;;
+status)
+   kill -n 0 `cat $SERVICE_HOME/wso2carbon.pid` > /dev/null 2>&1 && exit 0
+;;
+*)
+   echo "Usage: $0 {start|stop|restart}"
+exit 1
+esac

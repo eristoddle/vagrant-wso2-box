@@ -31,17 +31,35 @@ you still want around but you do not want to autostart:
 
 `sudo update-rc.d wso2brs disable`
 
+##Build
+All the capabilities to build from source are here, just not activated because the box needs a lot of memory to build
+with Maven.
+
 ##Installing applications with the features manager
+
+HAD TO SPLIT THE DAMN THING INTO TWO BOXES BECAUSE THE FEATURE MANAGER IS FUCKED TO HELL
 
 Go to Configure/Features/Repository Management
 Add repos needed from
-Add this repo if not already there:
-name: Equinox P2
-url: http://product-dist.wso2.com/p2/carbon/releases/4.2.0/
+Add these repos if not already there:
+name: Turing
+url: http://dist.wso2.org/p2/carbon/releases/turing/
 
-Then click the 'Find Features
+name: Turing 10
+url: http://product-dist.wso2.com/p2/carbon/releases/turing_chunk10/
+
+name: Turing 13
+url: http://product-dist.wso2.com/p2/carbon/releases/turing_chunk13/
+
+Then click the 'Find Features' button.
+
+- Install DSS 3.2.2 from the P2 repo
+- Install API Manager version 1.7.0
+
+###More info on repos
 
 List of repos: http://product-dist.wso2.com/p2/carbon/releases
+- http://wso2.com/projects/carbon/provisioning-wso2-carbon-with-equinox-p2/
 Play whack-a-repo to find the right version: http://wso2.com/products/carbon/release-matrix/
 
 ##Where are the applications in the box
@@ -54,3 +72,9 @@ Under the `/opt` folder.
 - [Carbon Admin](https://localhost:9443/carbon)
 - [API Store](https://localhost:9443/store)
 - [API Publisher](https://localhost:9443/publisher)
+
+##Development
+
+- http://wso2.com/library/articles/2014/06/develop-and-deploy-esb-artifacts-using-wso2-developer-studio/
+- http://wso2.com/library/articles/2012/09/develop-deploy-web-applications-using-wso2-developer-studio/
+- http://wso2.com/library/articles/2015/01/wso2-api-manager-scalable-deployment-patterns-01/

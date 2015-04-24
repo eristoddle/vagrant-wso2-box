@@ -1,0 +1,12 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+#export JAVA_HOME=/usr/java/default
+export JAVA_HOME=/usr/lib/jvm/java-7-oracle/
+export PATH=${JAVA_HOME}/bin:${PATH}
+export MAVEN_OPTS="-Xms1024m -Xmx1024m -XX:MaxPermSize=1024m"
