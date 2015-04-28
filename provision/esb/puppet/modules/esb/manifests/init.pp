@@ -25,6 +25,12 @@ class esb{
     mode   => 755,
     source => '/vagrant/provision/esb/puppet/modules/esb/files/wso2esb',
   }->
+  file { '/opt/wso2esb-4.8.1/repository/components/lib/postgresql-9.4-1201.jdbc41.jar':
+    owner  => root,
+    group  => root,
+    mode   => 755,
+    source => '/home/vagrant/postgresql-9.4-1201.jdbc41.jar',
+  }->
   service { 'wso2esb':
     ensure => true,
     enable => true

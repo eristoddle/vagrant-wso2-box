@@ -27,17 +27,17 @@
     <!--
        Product Name
     -->
-    <Name>WSO2 Business Activity Monitor</Name>
+    <Name>WSO2 API Monitor</Name>
 
     <!--
        machine readable unique key to identify each product
     -->
-    <ServerKey>BAM</ServerKey>
+    <ServerKey>AM</ServerKey>
 
     <!--
        Product Version
     -->
-    <Version>2.4.1</Version>
+    <Version>1.8.0</Version>
 
     <!--
        Host name or IP address of the machine hosting this server
@@ -111,7 +111,7 @@
          the define value + Offset.
          e.g. Offset=2 and HTTPS port=9443 will set the effective HTTPS port to 9445
          -->
-        <Offset>3</Offset>
+        <Offset>2</Offset>
 
         <!-- The JMX Ports -->
         <JMX>

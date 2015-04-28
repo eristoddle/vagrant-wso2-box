@@ -3,7 +3,7 @@
 # description: SysVInit script for WSO2 API Manager
 
 export JAVA_HOME=/usr/java/default
-export SERVICE_HOME='/opt/wso2am-1.7.0'
+export SERVICE_HOME='/opt/wso2am-1.8.0'
 export SERVICE_NAME='WSO2 API Manager'
 export USER=vagrant
 

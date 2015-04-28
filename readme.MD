@@ -14,7 +14,7 @@ It downloads:
 All can be stopped, started and restarted
 
 `sudo service wso2am restart`
-`sudo service wso2brs stop`
+`sudo service wso2esb stop`
 etc...
 
 ##Build
@@ -33,14 +33,13 @@ url: http://dist.wso2.org/p2/carbon/releases/turing/
 
 Then click the 'Find Features' button.
 
-- Install DSS 3.2.2 on the esb box
-- Install BRS ????
+- Install DSS 3.2.2 in the ESB admin
 
 ###More info on repos
 
-List of repos: http://product-dist.wso2.com/p2/carbon/releases
+- List of repos: http://product-dist.wso2.com/p2/carbon/releases
 - http://wso2.com/projects/carbon/provisioning-wso2-carbon-with-equinox-p2/
-Play whack-a-repo to find the right version: http://wso2.com/products/carbon/release-matrix/
+- http://wso2.com/products/carbon/release-matrix/
 
 ##Where are the applications in the box
 
@@ -49,10 +48,10 @@ Under the `/opt` folder.
 ## Links
 
 - [Docs](https://docs.wso2.com/)
-- [ESB Carbon Admin](https://192.168.11.11:9443/carbon)
-- [AM Carbon Admin](https://192.168.11.12:9443/carbon)
-- [API Store](https://192.168.11.12:9443/store)
-- [API Publisher](https://192.168.11.12:9443/publisher)
+- [ESB Carbon Admin](https://localhost:9443/carbon)
+- [API Carbon Admin](https://localhost:9445/carbon)
+- [API Store](https://localhost:9445/store)
+- [API Publisher](https://localhost:9445/publisher)
 
 ##Development
 
