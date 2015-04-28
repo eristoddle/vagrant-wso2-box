@@ -37,8 +37,12 @@ Under the `/opt` folder.
 - [Docs](https://docs.wso2.com/)
 - [ESB Carbon Admin](https://localhost:9443/carbon)
 - [API Carbon Admin](https://localhost:9445/carbon)
+- [BAM Carbon Admin](https://localhost:9444/carbon)
+- [GREG Carbon Admin](https://localhost:9446/carbon)
 - [API Store](https://localhost:9445/store)
 - [API Publisher](https://localhost:9445/publisher)
+- [BAM Gadget Server Default Context](https://localhost:9764/portal)
+[2015-04-28 02:36:02,849]  INFO {org.wso2.carbon.ui.internal.CarbonUIServiceComponent} -  Gadget Server Default Context : http://192.168.11.11:9764/portal
 - Username Everywhere: admin
 - Password Everywhere: admin
 
@@ -49,6 +53,14 @@ Under the `/opt` folder.
 - http://wso2.com/library/articles/2015/01/wso2-api-manager-scalable-deployment-patterns-01/
 
 ##Manual
+
+###Starting the BAM Server
+
+For some reason, I can't get the startup script to work.
+It gets installed, so you can ignore the error when it is provisioned.
+It can be started from inside the box with:
+
+`sh /opt/wso2bam-2.4.1/bin/wso2server.sh > /dev/null &`
 
 ###Installing applications with the features manager
 

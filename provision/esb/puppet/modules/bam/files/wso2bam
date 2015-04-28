@@ -24,7 +24,7 @@ stop)
    echo "Stopping $SERVICE_NAME ..."
    su -c "${stopcmd}" $USER
 ;;
-status)
+status)`
    kill -n 0 `cat $SERVICE_HOME/wso2carbon.pid` > /dev/null 2>&1 && exit 0
 ;;
 *)

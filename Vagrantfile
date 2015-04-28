@@ -23,18 +23,20 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define "wso2esb" do |wso2esb|
     #ESB
     wso2esb.vm.network "forwarded_port", guest: 9443, host: 9443
-    wso2esb.vm.network "forwarded_port", guest: 9446, host: 9446
     wso2esb.vm.network "forwarded_port", guest: 9763, host: 9763
     wso2esb.vm.network "forwarded_port", guest: 8280, host: 8280
     wso2esb.vm.network "forwarded_port", guest: 8243, host: 8243
-    wso2esb.vm.network "forwarded_port", guest: 7614, host: 7614
     #AM
     wso2esb.vm.network "forwarded_port", guest: 9445, host: 9445
-    wso2esb.vm.network "forwarded_port", guest: 9448, host: 9448
     wso2esb.vm.network "forwarded_port", guest: 9765, host: 9765
     wso2esb.vm.network "forwarded_port", guest: 8282, host: 8282
     wso2esb.vm.network "forwarded_port", guest: 8245, host: 8245
-    wso2esb.vm.network "forwarded_port", guest: 7616, host: 7616
+    #BAM
+    wso2esb.vm.network "forwarded_port", guest: 9444, host: 9444
+    wso2esb.vm.network "forwarded_port", guest: 9764, host: 9764
+    wso2esb.vm.network "forwarded_port", guest: 7614, host: 7614
+    #GREG
+    wso2esb.vm.network "forwarded_port", guest: 9446, host: 9446
 
     wso2esb.vm.network :private_network, ip: "192.168.11.11"
     wso2esb.vm.hostname = "wso2esb.local"

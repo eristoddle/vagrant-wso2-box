@@ -27,8 +27,7 @@ class greg{
   }->
   service { 'wso2greg':
     ensure => true,
-    enable => true,
-  require => [ Service['wso2greg'] ],
+    enable => true
   }
 
   file { '/opt/wso2greg-4.6.0/repository/conf/carbon.xml':

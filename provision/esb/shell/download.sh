@@ -42,6 +42,16 @@ else
    wget --user-agent="testuser" --referer="http://connect.wso2.com/wso2/getform/reg/new_product_download" http://product-dist.wso2.com/products/business-activity-monitor/2.4.1/wso2bam-2.4.1.zip
 fi
 
+# GR
+FILE=wso2greg-4.6.0.zip
+
+if [ -f $FILE ];
+then
+   echo "GR already downloaded"
+else
+   wget --user-agent="testuser" --referer="http://connect.wso2.com/wso2/getform/reg/new_product_download" http://product-dist.wso2.com/products/governance-registry/4.6.0/wso2greg-4.6.0.zip
+fi
+
 ## BRS
 #FILE=wso2brs-2.1.0.zip
 #
@@ -150,16 +160,6 @@ fi
 #   echo "ES already downloaded"
 #else
 #   wget --user-agent="testuser" --referer="http://connect.wso2.com/wso2/getform/reg/new_product_download" http://product-dist.wso2.com/products/enterprise-store/1.0.0/wso2store-1.0.0.zip
-#fi
-#
-## GR
-#FILE=wso2greg-4.6.0.zip
-#
-#if [ -f $FILE ];
-#then
-#   echo "GR already downloaded"
-#else
-#   wget --user-agent="testuser" --referer="http://connect.wso2.com/wso2/getform/reg/new_product_download" http://product-dist.wso2.com/products/governance-registry/4.6.0/wso2greg-4.6.0.zip
 #fi
 #
 ## IS
