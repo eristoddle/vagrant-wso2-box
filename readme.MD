@@ -42,7 +42,6 @@ Under the `/opt` folder.
 - [API Store](https://localhost:9445/store)
 - [API Publisher](https://localhost:9445/publisher)
 - [BAM Gadget Server Default Context](https://localhost:9764/portal)
-[2015-04-28 02:36:02,849]  INFO {org.wso2.carbon.ui.internal.CarbonUIServiceComponent} -  Gadget Server Default Context : http://192.168.11.11:9764/portal
 - Username Everywhere: admin
 - Password Everywhere: admin
 
