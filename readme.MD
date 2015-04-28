@@ -52,6 +52,8 @@ Under the `/opt` folder.
 - [API Carbon Admin](https://localhost:9445/carbon)
 - [API Store](https://localhost:9445/store)
 - [API Publisher](https://localhost:9445/publisher)
+- Username Everywhere: admin
+- Password Everywhere: admin
 
 ##Development
 
