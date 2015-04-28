@@ -10,7 +10,7 @@ class greg{
     mode   => 0644,
   }
 
-  exec { 'Extract WSO2 Business Manager':
+  exec { 'Extract WSO2 Governance Registry':
     command => '/usr/bin/unzip /tmp/wso2greg-4.6.0.zip',
     cwd     => '/opt',
     creates => '/opt/wso2greg-4.6.0/bin/wso2server.sh',
@@ -33,7 +33,7 @@ class greg{
 
   file { '/opt/wso2greg-4.6.0/repository/conf/carbon.xml':
     source  => '/vagrant/provision/esb/puppet/modules/greg/files/carbon.xml',
-    require => Exec['Extract WSO2 Governance Registory'],
+    require => Exec['Extract WSO2 Governance Registry'],
     notify  => Service['wso2greg'],
   }
 }
