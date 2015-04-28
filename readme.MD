@@ -8,6 +8,7 @@ It downloads:
 - Maven
 - ActiveMQ
 - All WSO2 Products, comment out those you don't need
+- Postgresql Driver
 
 ##Active Application Services
 
@@ -22,8 +23,6 @@ All the capabilities to build from source are here, just not activated because t
 with Maven.
 
 ##Installing applications with the features manager
-
-HAD TO SPLIT THE DAMN THING INTO TWO BOXES BECAUSE THE FEATURE MANAGER IS BORKED
 
 Go to Configure/Features/Repository Management in the ESB box
 Add repos needed from
