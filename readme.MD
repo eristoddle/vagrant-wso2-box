@@ -22,18 +22,6 @@ etc...
 All the capabilities to build from source are here, just not activated because the box needs a lot of memory to build
 with Maven.
 
-##Installing applications with the features manager
-
-Go to Configure/Features/Repository Management in the ESB box
-Add repos needed from
-Add these repos if not already there:
-name: Turing
-url: http://dist.wso2.org/p2/carbon/releases/turing/
-
-Then click the 'Find Features' button.
-
-- Install DSS 3.2.2 in the ESB admin
-
 ###More info on repos
 
 - List of repos: http://product-dist.wso2.com/p2/carbon/releases
@@ -59,3 +47,21 @@ Under the `/opt` folder.
 - http://wso2.com/library/articles/2014/06/develop-and-deploy-esb-artifacts-using-wso2-developer-studio/
 - http://wso2.com/library/articles/2012/09/develop-deploy-web-applications-using-wso2-developer-studio/
 - http://wso2.com/library/articles/2015/01/wso2-api-manager-scalable-deployment-patterns-01/
+
+##Manual
+
+###Installing applications with the features manager
+
+Go to Configure/Features/Repository Management in the ESB box
+Add repos needed from
+Add these repos if not already there:
+name: Turing
+url: http://dist.wso2.org/p2/carbon/releases/turing/
+
+Then click the 'Find Features' button.
+
+- Install DSS 3.2.2 in the ESB admin
+
+###Add Data Source
+
+- Add remote Postgresql database to DSS
