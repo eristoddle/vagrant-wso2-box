@@ -2,7 +2,7 @@
 # chkconfig: 2345 20 80
 # description: SysVInit script for WSO2 Business Manager
 
-export JAVA_HOME=/usr/java/default
+export JAVA_HOME=/usr/lib/jvm/java-7-oracle
 export SERVICE_HOME='/opt/wso2greg-4.6.0'
 export SERVICE_NAME='WSO2 Business Manager'
 export USER=vagrant
